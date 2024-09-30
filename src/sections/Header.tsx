@@ -19,7 +19,7 @@ const NavLink: React.FC<NavLinkProps> = ({ title }) => {
 };
 
 const Header = () => {
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+	
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
