@@ -1,7 +1,5 @@
 import clsx from 'clsx';
 import { useState } from 'react';
-import { SlideDown } from 'react-slidedown';
-import 'react-slidedown/lib/slidedown.css';
 
 interface FaqItemProps {
 	item: {
@@ -47,11 +45,15 @@ const FaqItem: React.FC<FaqItemProps> = ({ item, index }) => {
 				</div>
 			</div>
 
-			<SlideDown>
-				{activeId === item.id && (
-					<div className='body-3 px-7 py-3.5'>{item.answer}</div>
+			<div
+				className={clsx(
+					'body-3 px-7 py-3.5 overflow-hidden transition-all duration-500',
+					active ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
 				)}
-			</SlideDown>
+				style={{ transition: 'max-height 0.5s ease-in-out' }}
+			>
+				{item.answer}
+			</div>
 
 			<div
 				className={clsx(
@@ -64,4 +66,5 @@ const FaqItem: React.FC<FaqItemProps> = ({ item, index }) => {
 		</div>
 	);
 };
+
 export default FaqItem;
