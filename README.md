@@ -1,4 +1,6 @@
 # XORA Landing Page Project
+![image](https://github.com/user-attachments/assets/783c5b59-3de0-4551-9b61-0898296913b2)
+![image](https://github.com/user-attachments/assets/bf57412f-9144-4c15-9bb4-489b3b967743)
 
 This project is a **landing page** built using **React** and **TypeScript** with the **Tailwind CSS** framework for styling. The page features reusable components, smooth scrolling navigation, and a custom button with an SVG marker.
 
@@ -37,22 +39,6 @@ npm run dev
 ```
 
 This will start a development server and you can view the project at `http://localhost:5173`.
-
-## Project Structure
-
-```
-├── public/
-│   └── images/
-├── src/
-│   ├── components/
-│   │   ├── Button.tsx
-│   │   └── Marker.tsx
-│   ├── App.tsx
-│   └── index.css
-├── package.json
-├── tailwind.config.js
-└── tsconfig.json
-```
 
 ## Dependencies
 
